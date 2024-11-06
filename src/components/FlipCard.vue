@@ -85,7 +85,8 @@ function start() {
         <div class="reveal" @click="start">
             <span>
                 It's a <br>
-                <span class="large">{{ reveal.displayGender }}</span>
+                <span class="large">{{ reveal.displayGender }}</span><br>
+                (probably)
             </span>
         </div>
     </div>
@@ -114,6 +115,7 @@ function start() {
 }
 
 .card {
+    position: absolute;
     background-color: transparent;
     border: 3px solid rgb(226, 204, 81);
     width: 40rem;
@@ -167,6 +169,7 @@ function start() {
 }
 
 .reveal {
+    position: absolute;
     border: 3px solid rgb(226, 204, 81);
     width: 40rem;
     aspect-ratio: 16/9;
